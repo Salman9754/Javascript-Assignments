@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    var subject1 = prompt("Enter Subject 1:")
+    var subject2 = prompt("Enter Subject 2:")
+    var subject3 = prompt("Enter Subject 3:")
+    var totalEach = 100;
+    var marksSub1 = +prompt("Enter " + subject1 + " " + " marks:")
+    var marksSub2 = +prompt("Enter " + subject2 + " " + " marks:")
+    var marksSub3 = +prompt("Enter " + subject3 + " " + " marks:")
+    var grandTotal = totalEach * 3;
+    var totalObtained = marksSub1 + marksSub2 + marksSub3;
+    var percentageEach1 = marksSub1 / totalEach * 100
+    var percentageEach2 = marksSub2 / totalEach * 100
+    var percentageEach3 = marksSub3 / totalEach * 100
+    var percentage = totalObtained / grandTotal * 100
+//     document.write(
+//       `
+//       <h1> Subject Total Marks Obtained & Marks Percentage </h1> <br />
+//  <p>${subject1}  ${totalEach}   ${marksSub1}   ${percentageEach1} %  </p>
+//       <p>${subject2}  ${totalEach}   ${marksSub2}   ${percentageEach2} %  </p>
+//       <p>${subject3}  ${totalEach}   ${marksSub3}   ${percentageEach3} %  </p>
+//       <p>         ${grandTotal}  ${totalObtained}   ${percentage} %     </p>
+
+
+
+//       `
+
+//     )
+document.write(`
+            <table border="1" cellspacing="0" cellpadding="8">
+                <tr>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtained Marks</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>${subject1}</td>
+                    <td>${totalEach}</td>
+                    <td>${marksSub1}</td>
+                    <td>${percentageEach1.toFixed(2)}%</td>
+                </tr>
+                <tr>
+                    <td>${subject2}</td>
+                    <td>${totalEach}</td>
+                    <td>${marksSub2}</td>
+                    <td>${percentageEach2.toFixed(2)}%</td>
+                </tr>
+                <tr>
+                    <td>${subject3}</td>
+                    <td>${totalEach}</td>
+                    <td>${marksSub3}</td>
+                    <td>${percentageEach3.toFixed(2)}%</td>
+                </tr>
+                <tr>
+                    <td><b>Total</b></td>
+                    <td><b>${grandTotal}</b></td>
+                    <td><b>${totalObtained}</b></td>
+                    <td><b>${percentage.toFixed(2)}%</b></td>
+                </tr>
+            </table>
+        `);
+
+
+
+
+
+  </script>
+</body>
+
+</html>

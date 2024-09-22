@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var secretNumber = 5; 
+var userGuess = prompt("Guess the secret number (1-10):");
+
+if (userGuess == secretNumber) {
+    alert("Bingo! Correct answer");
+} else if (userGuess == secretNumber - 1) {
+    alert("Close enough to the correct answer");
+} else {
+    alert("Wrong guess. The secret number was " + secretNumber);
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        var firstNumber = prompt("Enter the first number:");
+        var secondNumber = prompt("Enter the second number:");
+        var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+        var result;
+
+        if (operation == "+") {
+            result = firstNumber + secondNumber;
+        } else if (operation == "-") {
+            result = firstNumber - secondNumber;
+        } else if (operation == "*") {
+            result = firstNumber * secondNumber;
+        } else if (operation == "/") {
+            result = firstNumber / secondNumber;
+        } else if (operation == "%") {
+            result = firstNumber % secondNumber;
+        } else {
+            alert("Invalid operation");
+        }
+
+        if (result !== undefined) {
+            alert("The result is: " + result);
+        }
+
+
+    </script>
+</body>
+
+</html>

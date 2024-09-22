@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var TotalMarks = +prompt("Enter Total marks")
+        var sub1 = +prompt("Enter the marks of subject 1:")
+        var sub2 = +prompt("Enter the marks of subject 2: ")
+        var sub3 = +prompt("Enter the marks of subject 3: ")
+        var totalObtained = sub1 + sub2 + sub3
+        var percentage = totalObtained / TotalMarks * 100
+        var Grade;
+        if (percentage >= 80) {
+            Grade = "A one"
+        }
+        else if (percentage >= 70) {
+            Grade = "A"
+        }
+        else if (percentage >= 60) {
+            Grade = "B"
+        }
+        else {
+            Grade = "Fail"
+        }
+        document.write(
+            `
+            <p>Total Marks: ${TotalMarks}</p>
+            <p>Marks Obtained: ${totalObtained}</p>
+            <p>Percentage: ${percentage} %</p>
+            <p>Grade: ${Grade}</p>
+            `
+        )
+
+    </script>
+</body>
+
+</html>
