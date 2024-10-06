@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+       var colors = ['Red', 'Green', 'Blue', 'White', 'Purple']
+        alert(colors)
+
+        // A.
+        var AddBeg = prompt("Choose color want to add in Begining")
+        colors.unshift(AddBeg)
+        document.write('Updated Array <br/>',colors)
+
+        // B.
+        var addEnd = prompt("Enter the color you want to add in End")
+        colors.push(addEnd)
+        document.write('Updated Array <br/>', colors)
+
+        // C.
+        var AddBeg = prompt("Choose 1st color want to add in Begining")
+        var AddBegTwo = prompt("Choose 2nd color want to add in Begining")
+        colors.unshift(AddBeg,AddBegTwo)
+        document.write('Updated Array <br/>', colors)
+
+        // D.
+        colors.shift()
+        document.write(colors)
+
+        // E.
+        colors.pop()
+        document.write(colors)
+
+        // F.
+        var DesiredIndex = +prompt("Enter Desired Index")
+        var DesiredColor = prompt("Enter Desired Color")
+        colors.splice(DesiredIndex,0,DesiredColor)
+        document.write(colors)
+
+        // G.
+        var DesiredIndex = +prompt("Enter Desired Index")
+        var DesiredCount = +prompt("Enter Desired Count to delete")
+        colors.splice(DesiredIndex, DesiredCount)
+        document.write(colors)
+
+
+    </script>
+</body>
+
+</html>

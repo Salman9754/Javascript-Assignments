@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    //    A.
+        var counting;
+        document.write("Counting: <br/>")
+        for(counting = 1; counting <= 15; counting++){
+            document.write(`${counting} , `)
+        }
+
+        // B.
+        var counting;
+        document.write("<br/> <br/> Reverse Counting: <br/>")
+        for(counting = 10; counting >= 1; counting--){
+            document.write(`${counting} , `)
+        }
+
+        // C.
+        var counting;
+        document.write("<br/> <br/> Even: <br/>")
+        for(counting = 0; counting <= 20; counting++)
+        if(counting % 2 === 0) {
+            document.write(`${counting} , `)
+        }
+
+        // D.
+        var counting;
+        document.write("<br/> <br/> Odd: <br/>")
+        for(counting = 0; counting <= 20; counting++)
+        if(counting % 2 != 0) {
+            document.write(`${counting} , `)
+        }
+
+        // E.
+        var counting;
+        document.write("<br/> <br/> Series: <br/>")
+        for(counting = 1; counting <= 20; counting++)
+        if(counting % 2 === 0) {
+            document.write(`${counting}K , `)
+        }
+    </script>
+</body>
+
+</html>

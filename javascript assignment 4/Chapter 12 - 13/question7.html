@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+
+        var searchItem = prompt("Enter the item you want to search:");
+
+
+        var found = false;
+        var index = -1
+
+
+        for (let i = 0; i < A.length; i++) {
+            if (A[i] === searchItem) {
+                found = true;
+                index = i;
+                break;
+            }
+        }
+
+
+        if (found) {
+            document.write(`${searchItem} is found in the list at Index ${index}!`);
+        } else {
+            document.write(`${searchItem} is not found in the list.`);
+        }
+    </script>
+</body>
+
+</html>

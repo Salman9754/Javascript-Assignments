@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        var students = ['Michael', 'Jhon', 'Tony']
+        var scores = [+prompt("Enter the marks of Micahel"), +prompt("Enter the marks of Jhon"), +prompt("Enter the marks of Tony")]
+        var maxScore = 500;
+        var percentage = [scores[0] / maxScore * 100, scores[1] / maxScore * 100, scores[2] / maxScore * 100]
+        document.write(`Marks of ${students[0]} are: ${scores[0]} and percentage is ${percentage[0]} % <br/> <br/>`)
+        document.write(`Marks of ${students[1]} are: ${scores[1]} and percentage is ${percentage[1]} % <br/> <br/>`)
+        document.write(`Marks of ${students[2]} are: ${scores[2]} and percentage is ${percentage[2]} % <br/> <br/>`)
+
+    </script>
+</body>
+
+</html>
