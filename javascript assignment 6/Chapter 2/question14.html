@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        var userName = 'ABC Customer'
+        var month = ["January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"];
+        var currentMonth = new Date().getMonth()
+        month = month[currentMonth]
+        var units = 410
+        var charges = 16
+        var net = units * charges
+        var late = 350
+        var gross = net + late
+        document.write(`<h1> K-Electric Bill </h1>`)
+        document.write('customer Name :' + userName + " <br/>")
+        document.write('Month :' + month + " <br/>")
+        document.write('No of Units :' + units + " <br/>")
+        document.write('charges per Unit :' + units + " <br/> <br/>")
+        document.write('Net Amount :' + net + " <br/>")
+        document.write('Gross Amount :' + gross + " <br/>")
+
+
+
+    </script>
+</body>
+
+</html>
