@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nova+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nova+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #F1F3F6;
+}
+
+* {
+    font-family: "Poppins", serif;
+}
+
+.navbar-brand {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+.navbar-brand:hover {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.crown_logo {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 24px;
+}
+
+.hero-sec {
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-sec video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-head {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hero-h1 {
+    font-size: 56px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.watch_card {
+    border-radius: 10px !important;
+    overflow: hidden;
+    border: none !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.down {
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.card-btn:hover {
+    background-color: white !important;
+    color: #162433 !important;
+    border: 1px solid #162433 !important;
+}
+
+.foot-one {
+    width: 70%;
+    line-height: 1.5;
+    gap: 15px;
+}
+.foot-ul{
+    padding: 0;
+}
+.foot-ul li {
+    color: white;
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+.seperation{
+    height: 1px;
+    background-color: rgb(255, 255, 255,0.5);
+}
+.footer-down{
+    font-size: 11px;
+}
+
+@media (max-width: 767px) {
+    .hero-h1 {
+        font-size: 40px;
+    }
+}
